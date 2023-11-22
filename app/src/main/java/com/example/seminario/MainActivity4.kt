@@ -66,6 +66,28 @@ class MainActivity4 : AppCompatActivity() {
             }
         })
 
+        binding.tietCorreo.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+                // No es necesario en este caso
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                // Este método se llama cuando el texto cambia
+                val password = s.toString()
+                // Aqui evaluamos el correo
+                if (!password.contains("@") || !password.contains(".")) {
+                    binding.tilCorreo.error =
+                        "El correo debe contener una @ y un ."
+                } else {
+                    binding.tilCorreo.error = null // Borra cualquier mensaje de error
+                }
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+                // No es necesario en este caso
+            }
+        })
+
         binding.tietCodigoPostal.addTextChangedListener(object: TextWatcher {
 
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
