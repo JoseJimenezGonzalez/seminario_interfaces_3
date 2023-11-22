@@ -49,7 +49,7 @@ class MainActivity4 : AppCompatActivity() {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 // Este método se llama cuando el texto cambia
                 val password = s.toString()
-                // Aquí puedes realizar la evaluación de la contraseña con una expresión regular
+                // Aqui evaluamos la contraseña
                 val pattern = Pattern.compile("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}\$")
                 val matcher = pattern.matcher(password)
 
@@ -67,6 +67,7 @@ class MainActivity4 : AppCompatActivity() {
         })
 
         binding.tietCodigoPostal.addTextChangedListener(object: TextWatcher {
+
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 // No es necesario en este caso
             }

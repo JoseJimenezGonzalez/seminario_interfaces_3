@@ -36,7 +36,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tilCorreo"
-        app:endIconDrawable="@drawable/ic_eye"
+        app:startIconDrawable="@drawable/ic_eye"
         android:paddingBottom="50dp">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tietPassword"
