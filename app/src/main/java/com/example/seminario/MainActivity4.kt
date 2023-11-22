@@ -60,7 +60,9 @@ class MainActivity4 : AppCompatActivity() {
                     binding.tilPassword.error = null // Borra cualquier mensaje de error
                 }
             }
-
+            //afterTextChanged(Editable s): Este método se llama para notificar que el texto en
+            //EditText ha cambiado completamente. Se ejecuta después de que el texto se ha
+            //modificado y onTextChanged ha sido llamado.
             override fun afterTextChanged(s: Editable?) {
                 // No es necesario en este caso
             }
