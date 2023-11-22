@@ -43,7 +43,7 @@ class MainActivity4 : AppCompatActivity() {
 
         binding.tietPassword.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                // No es necesario implementar este método para tu caso
+                // No es necesario en este caso
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
@@ -62,8 +62,31 @@ class MainActivity4 : AppCompatActivity() {
             }
 
             override fun afterTextChanged(s: Editable?) {
-                // No es necesario implementar este método para tu caso
+                // No es necesario en este caso
             }
+        })
+
+        binding.tietCodigoPostal.addTextChangedListener(object: TextWatcher {
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                // No es necesario en este caso
+            }
+
+            override fun onTextChanged(s: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                //Cada vez que cambia el texto se llama
+                val codigoPostal = s.toString()
+                //Evaluamos que tenga que ser valido
+                if(codigoPostal.length != 5){
+                    binding.tilCodigoPostal.error =
+                        "El codigo postal debe de tener exactamente 5 caracteres."
+                }else{
+                    binding.tilCodigoPostal.error = null // Borra cualquier mensaje de error
+                }
+            }
+
+            override fun afterTextChanged(p0: Editable?) {
+                // No es necesario en este caso
+            }
+
         })
     }
 }

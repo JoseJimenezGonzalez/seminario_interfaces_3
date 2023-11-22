@@ -17,8 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/tilPassword"
-        app:helperText="Obligatorio"
-        android:paddingBottom="10dp">
+        android:paddingBottom="50dp">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tietCorreo"
             android:layout_width="match_parent"
@@ -38,8 +37,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tilCorreo"
         app:endIconDrawable="@drawable/ic_eye"
-        app:helperText="Obligatorio"
-        android:paddingBottom="10dp">
+        android:paddingBottom="50dp">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tietPassword"
             android:layout_width="match_parent"
@@ -57,7 +55,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tilPassword"
         app:layout_constraintEnd_toEndOf="@id/guidelineVertical1"
-        android:paddingBottom="10dp"
+        android:paddingBottom="50dp"
         android:paddingRight="5dp">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tietNombre"
@@ -76,7 +74,7 @@
         app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
         app:layout_constraintTop_toBottomOf="@id/tilPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        android:paddingBottom="10dp"
+        android:paddingBottom="50dp"
         android:paddingLeft="5dp">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tietCodigoPostal"
@@ -95,7 +93,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tilNombre"
         app:layout_constraintEnd_toEndOf="parent"
-        android:paddingBottom="10dp">
+        android:paddingBottom="50dp">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tietFechaNacimiento"
             android:layout_width="match_parent"
