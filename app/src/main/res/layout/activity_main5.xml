@@ -7,14 +7,26 @@
     tools:context=".MainActivity5">
 
     <TextView
+        android:id="@+id/tvMensaje"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnVolverPrincipal"
         android:textSize="30sp"
         android:text="Todo correcto">
     </TextView>
+
+    <Button
+        android:id="@+id/btnVolverPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver al main"
+        app:layout_constraintTop_toBottomOf="@id/tvMensaje"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
